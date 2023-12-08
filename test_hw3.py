@@ -19,10 +19,6 @@ def test_login_positive(browser):
 def test_contact_us(browser):
     logging.info("Test add_post Starting")
     testpage = OperationsHelper(browser)
-    # testpage.go_to_site()
-    # testpage.enter_login(testdata["login"])
-    # testpage.enter_pass(testdata["pswd"])
-    # testpage.click_login_button()
     testpage.click_contact_button()
     testpage.add_name(testdata["u_name"])
     testpage.add_email(testdata["u_email"])
